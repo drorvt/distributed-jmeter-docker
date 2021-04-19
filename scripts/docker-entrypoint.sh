@@ -9,6 +9,7 @@ case $1 in
         $JMETER_HOME/bin/jmeter-server \
             -Dserver.rmi.localport=50000 \
             -Dserver_port=1099
+            -Djava.net.preferIPv6Addresses=true
         ;;
     *)
         echo "Sorry, this option doesn't exist!"
